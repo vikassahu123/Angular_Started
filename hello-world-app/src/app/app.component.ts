@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -15,6 +15,8 @@ export class AppComponent {
 
   logourl:string='BL_logo_square_jpg.jpg'; //UC3 logo of bridgeLabz 
 
-  logoUrl:string='BL_logo_square_jpg.jpg';
-  openBridgeLabz(){window.open('https://www.bridgeLabz.com','_blank')}
+  logoUrl:string='BL_logo_square_jpg.jpg';//UC4 logo of bridgeLabz and click event
+  openBridgeLabz(){window.open('https://www.bridgeLabz.com', '_blank')} 
+
+  userName:string ='';
 }
