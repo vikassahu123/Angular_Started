@@ -13,5 +13,8 @@ export class AppComponent {
 
   message: string = 'Hello from BridgeLabz!'; //UC2 data binding 
 
-  logourl:string='BL_logo_square_jpg.jpg'; //UC3 logo of bridgeLabz
+  logourl:string='BL_logo_square_jpg.jpg'; //UC3 logo of bridgeLabz 
+
+  logoUrl:string='BL_logo_square_jpg.jpg';
+  openBridgeLabz(){window.open('https://www.bridgeLabz.com','_blank')}
 }
