@@ -7,6 +7,11 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  message: string= 'Hello from BridgeLabz!'; 
+export class AppComponent { 
+
+  title = 'hello-world-app';// UC1 hello print
+
+  message: string = 'Hello from BridgeLabz!'; //UC2 data binding 
+
+  logourl:string='BL_logo_square_jpg.jpg'; //UC3 logo of bridgeLabz
 }
