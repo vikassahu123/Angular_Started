@@ -49,5 +49,19 @@ UC 5 the value can be reflected in the Hello Message -->
 
 <div>
   <input type="text" [(ngModel)]="userName" placeholder="Enter your name"> 
-  <h1>hello from BridgeLabz ,{{userName}} ! </h1>
+  <h1>hello {{userName}} from BridgeLabz , ! </h1>
+</div>
+
+<!-- To display Hello from
+BridgeLabz with a user
+inputted name - Ensure the userName is the valid input
+consisting of Initial Caps and min 3 Letter.
+
+UC 6 - In Case Error display the error --> 
+
+<div>
+  <input type="text" [(ngModel)]="userName" (input)="isValidUserName()" placeholder="Enter your name">
+ 
+  <h1>Hello from BridgeLabz, {{ userName }}!</h1>
+  <p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
 </div>
